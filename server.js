@@ -179,7 +179,56 @@ app.post('/movie', async(req, res) => {
 ////    "bio": <director_bio>
 ////    "birth": <director_birth>
 ////    "death": <director_death>
-////    "bio": <director_image>
+////    "image": <director_image>
 ////
 //////////////////
 
+app.post('/director', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
+
+//POST: Add genre to database
+//////////////////
+////
+////    Body Requirement:
+////    "name": <genre_name>.required
+////
+////    Optional:
+////    "description": <director_description>
+////    "image": <director_image>
+////
+//////////////////
+
+app.post('/genre', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
+
+//PUT:  Update movie
+app.put('/movie/:movieId', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
+
+//PUT:  Update director
+app.put('/director/:directorId', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
+
+//PUT:  Update genre
+app.put('/genre/:genreId', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
+
+//DELETE: Delete genre
+app.delete('/movie/:movieId', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
+
+//DELETE:  Delete director
+app.delete('/director/:directorId', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
+
+//DELETE:  Delete genre
+app.delete('/genre/:genreId', async(req, res) => {
+    res.status(501).send('Not implemented yet');
+});
