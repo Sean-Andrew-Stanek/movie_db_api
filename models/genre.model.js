@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const genreSchema = mongoose.Schema({
     name: {type: String, required: true},
-    description: {type: String, required: true},
-    image: {type: String, required: true}
+    description: {type: String},
+    image: {type: String}
 });
 
 genreSchema.virtual('movies', {

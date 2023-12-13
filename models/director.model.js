@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 
 const directorSchema = mongoose.Schema({
     name: {type: String, required: true},
-    bio: {type: String, required: true},
-    birth: {type: Date, required: true},
-    death: Date,
-    image: {type: String, required: true}
+    bio: {type: String},
+    birth: {type: Date},
+    death: {type: Date},
+    image: {type: String}
 });
 
 //Add movies to director
